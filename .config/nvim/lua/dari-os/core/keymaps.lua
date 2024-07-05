@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- keymap.set("i", "jk", "<ESC>", {desc = "Exit insert mode with jk"})
-keymap.set("i", "<C-s>", "<cmd>write<CR>", { desc = "Writes out the current file"})
+keymap.set({ "i", "n" }, "<C-s>", "<cmd>write<CR>", { desc = "Writes out the current file" })
 
 
  keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
