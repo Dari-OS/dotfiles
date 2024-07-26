@@ -13,34 +13,6 @@ return {
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 		local keymap = vim.keymap
 
-		-- Enable Clippy for Rust
-		lspconfig.rust_analyzer.setup({
-			settings = {
-				["rust-analyzer"] = {
-					checkOnSave = {
-						command = "clippy",
-					},
-					diagnostics = {
-						enable = true,
-						experimental = {
-							enable = true,
-						},
-					},
-					cargo = {
-						allFeatures = true,
-					},
-					procMacro = {
-						enable = true,
-					},
-				},
-			},
-		})
-
-		-- Enable error hints in insert mode
-		vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-			update_in_insert = true,
-		})
-
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
