@@ -111,3 +111,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 fastfetch
+if [ -z "$TMUX" ]; then
+
+tmux attach -t main || tmux new-session -s main
+
+fi
