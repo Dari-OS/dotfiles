@@ -8,3 +8,4 @@ programms to install
 - oh-my-zsh
 - kitty
 - tmux
+- [.NET](https://learn.microsoft.com/en-us/dotnet/core/install/linux)
