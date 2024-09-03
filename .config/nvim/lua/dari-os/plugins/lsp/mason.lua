@@ -38,6 +38,7 @@ return {
 					"nginx_language_server",
 					"bashls",
 					"clangd",
+					"omnisharp",
 					"cmake",
 					"taplo",
 					"lemminx",

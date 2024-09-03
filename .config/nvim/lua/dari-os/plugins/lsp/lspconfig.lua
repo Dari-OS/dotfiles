@@ -91,6 +91,23 @@ return {
 					},
 				})
 			end,
+			["omnisharp"] = function()
+				lspconfig.omnisharp.setup({
+					capabilities = capabilities,
+					cmd = { "omnisharp" },
+					on_attach = function(client, bufnr)
+						if client.server_capabilities.documentFormattingProvider then
+							vim.api.nvim_create_autocmd("BufWritePre", {
+								group = vim.api.nvim_create_augroup("FormatOnSave", { clear = true }),
+								buffer = bufnr,
+								callback = function()
+									vim.lsp.buf.format({ async = true })
+								end,
+							})
+						end
+					end,
+				})
+			end,
 		})
 	end,
 }
