@@ -31,7 +31,6 @@ return {
 					"docker_compose_language_service",
 					"dotls",
 					"gopls",
-					"grammarly",
 					"jsonls",
 					"jdtls",
 					"marksman",
