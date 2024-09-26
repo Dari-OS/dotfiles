@@ -1,0 +1,9 @@
+/.oh-my-zsh-themes
+
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+^/COPYING

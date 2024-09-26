@@ -3,13 +3,11 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export ZSH_2000_DISABLE_RVM='true'
-export ZSH_2000_DISABLE_RIGHT_PROMPT='true'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="zsh2000"
+ZSH_THEME="arrow-blue"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -116,4 +114,5 @@ tmux attach -t main || tmux new-session -s main
 
 fi
 fastfetch
-
+echo ""
+echo ""
