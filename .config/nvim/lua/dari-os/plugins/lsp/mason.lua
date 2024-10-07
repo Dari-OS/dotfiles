@@ -34,6 +34,7 @@ return {
 					"jsonls",
 					"jdtls",
 					"marksman",
+					"texlab",
 					"nginx_language_server",
 					"bashls",
 					"clangd",
