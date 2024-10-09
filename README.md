@@ -11,3 +11,4 @@ programms to install
 - tmux
 - [.NET](https://learn.microsoft.com/en-us/dotnet/core/install/linux)
 - [latexmk](https://mg.readthedocs.io/latexmk.html)
+- [NerdFont](https://www.nerdfonts.com/)
