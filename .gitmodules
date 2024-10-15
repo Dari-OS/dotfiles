@@ -9,4 +9,4 @@
 	url = https://github.com/tmux-plugins/tmux-sensible
 [submodule ".config/tmux/plugins/vim-tmux-navigator"]
 	path = .config/tmux/plugins/vim-tmux-navigator
-	url = https://github.com/tmux-plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
