@@ -20,3 +20,12 @@ Be sure to copy all submodules too!
 ```bash
 git clone --recurse-submodules https://github.com/Dari-OS/dotfiles
 ```
+
+## Update submodules
+
+clone the repo and then execute following command:
+
+```bash
+git submodule update --remote --merge
+
+```
