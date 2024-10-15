@@ -12,6 +12,8 @@ programms to install
 - [.NET](https://learn.microsoft.com/en-us/dotnet/core/install/linux)
 - [latexmk](https://mg.readthedocs.io/latexmk.html)
 - [NerdFont](https://www.nerdfonts.com/)
+- [Zoxide](https://github.com/ajeetdsouza/zoxide)
+- [eza](https://github.com/eza-community/eza)
 
 ## Installation
 
