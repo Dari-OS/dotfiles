@@ -77,6 +77,19 @@ plugins=(
   sudo
 )
 
+ZSH_WEB_SEARCH_ENGINES=(
+    crates "https://crates.io/search?q=" 
+    lib "https://lib.rs/search?q="
+    spotify "https://open.spotify.com/search/"
+    gitlab "https://gitlab.com/search?search="
+)
+
+alias yt="web_search youtube"
+alias lib="web_search lib"
+alias spotify="web_search spotify"
+alias gitlab="web_search gitlab"
+
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -138,3 +151,5 @@ fastfetch
 echo ""
 echo ""
 echo ""
+
+eval "$(zoxide init zsh)"
