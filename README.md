@@ -18,5 +18,5 @@ programms to install
 Be sure to copy all submodules too!
 
 ```bash
-git clone --recurse-submodules https://github.com/Dari_OS/dotfiles
+git clone --recurse-submodules https://github.com/Dari-OS/dotfiles
 ```
