@@ -1,2 +1,3 @@
-require("dari-os.core")
-require("dari-os.lazy")
+require("config")
+vim.opt.termguicolors = true
+
