@@ -13,7 +13,7 @@ programms to install
 - [latexmk](https://mg.readthedocs.io/latexmk.html)
 - [NerdFont](https://www.nerdfonts.com/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
-- [eza](https://github.com/eza-community/eza)
+- [~eza~](https://github.com/eza-community/eza)
 
 ## Installation
 
