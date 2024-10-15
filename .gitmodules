@@ -1,12 +1,12 @@
-[submodule "/home/dari_os/dotfiles/.config/tmux/plugins/tpm"]
-	path = /home/dari_os/dotfiles/.config/tmux/plugins/tpm
+[submodule ".config/tmux/plugins/tpm"]
+	path = .config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "/home/dari_os/dotfiles/.config/tmux/plugins/tmux2k"]
-	path = /home/dari_os/dotfiles/.config/tmux/plugins/tmux2k
+[submodule ".config/tmux/plugins/tmux2k"]
+	path = .config/tmux/plugins/tmux2k
 	url = https://github.com/2KAbhishek/tmux2k
-[submodule "/home/dari_os/dotfiles/.config/tmux/plugins/tmux-sensible"]
-	path = /home/dari_os/dotfiles/.config/tmux/plugins/tmux-sensible
+[submodule ".config/tmux/plugins/tmux-sensible"]
+	path = .config/tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
-[submodule "/home/dari_os/dotfiles/.config/tmux/plugins/vim-tmux-navigator"]
-	path = /home/dari_os/dotfiles/.config/tmux/plugins/vim-tmux-navigator
-	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule ".config/tmux/plugins/vim-tmux-navigator"]
+	path = .config/tmux/plugins/vim-tmux-navigator
+	url = https://github.com/tmux-plugins/vim-tmux-navigator
