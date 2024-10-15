@@ -144,6 +144,7 @@ return {
 	},
 	{
 		name = "omnisharp",
+		filetypes = { "cs", "vb", "cshtml", "csproj", "vbproj", "sln" },
 		treesitter = { "c_sharp" },
 		lsp = "omnisharp",
 		lsp_config = {

@@ -14,7 +14,7 @@ return {
 		-- Load the languages configuration
 		local languages = require("config.lsp-config")
 
-    local lsp_loader = require("plugins.lsp.lsp-loader").loader
+		local lsp_loader = require("plugins.lsp.lsp-loader").loader
 		-- Enable and configure mason
 		mason.setup({})
 
@@ -23,7 +23,7 @@ return {
 		local formatters = lsp_loader.formatter
 		local linters = lsp_loader.linter
 
-    -- TODO: Replace with plugin
+		-- TODO: Replace with plugin
 		for _, lang in ipairs(languages) do
 			if lang.lsp and not lang.lsp_no_mason then
 				table.insert(lsp_servers, lang.lsp)

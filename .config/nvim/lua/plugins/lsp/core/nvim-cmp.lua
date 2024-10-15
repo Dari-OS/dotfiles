@@ -29,6 +29,8 @@ return {
 				-- "preview" -> Display a code preview of the completion
 				-- "noselect" -> Don't select the first item automatically
 				completeopt = "menu,menuone,preview,noselect",
+				border = "rounded",
+				winhighlight = "Normal:CmpNormal",
 			},
 
 			snippet = {
@@ -41,7 +43,7 @@ return {
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(), -- Previous suggestion
 				["<C-j>"] = cmp.mapping.select_next_item(), -- Next suggestion
-				["<leader>cc"] = cmp.mapping.complete(), -- show completion suggestions
+				["<C-s>"] = cmp.mapping.complete(), -- show completion suggestions
 				["<C-u>"] = cmp.mapping.scroll_docs(-4), -- Scroll up in the completion docs
 				["<C-d>"] = cmp.mapping.scroll_docs(4), -- Scroll down in the completion docs
 				["<C-c>"] = cmp.mapping.abort(), -- Close completion window
@@ -58,22 +60,10 @@ return {
 
 			-- Configure lspkind
 			formatting = {
-				format = function(entry, item)
-					-- Make nvim-color-highlights work nicely with autocompletion
-					local color_item = require("nvim-highlight-colors").format(entry, { kind = item.kind })
-
-					-- configure lspkind for vs-code like pictograms in completion men
-					item = lspkind.cmp_format({
-						-- Any lspkind settings here
-						maxwidth = 50,
-						ellipsis_char = "...",
-					})(entry, item)
-					if color_item.abbr_hl_group then
-						item.kind_hl_group = color_item.abbr_hl_group
-						item.kind = color_item.abbr
-					end
-					return item
-				end,
+				format = lspkind.cmp_format({
+					maxwidth = 50,
+					ellipsis_char = "...",
+				}),
 			},
 		})
 	end,

@@ -12,7 +12,7 @@ return {
 		local mason_lspconfig = require("mason-lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 		local keymap = vim.keymap
-		local lsp_loader = require("plugins.lsp.lsp-loader").loader
+		local languages = require("config.lsp-config")
 
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -78,10 +78,13 @@ return {
 					capabilities = capabilities,
 				}
 
-				local lsp_config = lsp_loader[server_name]
-
-				if lsp_config then
-					server_config = vim.tbl_deep_extend("force", server_config, lsp_config)
+				-- Check for special configurations in the languages list
+				for _, lang in ipairs(languages) do
+					if lang.name == server_name then
+						if lang.lsp_config then
+							server_config = vim.tbl_deep_extend("force", server_config, lang.lsp_config)
+						end
+					end
 				end
 
 				lspconfig[server_name].setup(server_config)

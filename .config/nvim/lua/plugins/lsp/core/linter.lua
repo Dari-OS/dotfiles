@@ -8,7 +8,6 @@ return {
 		-- Initialize an empty table for linters
 		lint.linters_by_ft = {}
 
-    -- TODO: Add a funciton to the lsp-loader to avoid using this methode of reading all formatters
 		for _, lang in ipairs(languages) do
 			if lang.linter then
 				for _, ft in ipairs(lang.filetypes or { lang.filetype }) do
@@ -27,7 +26,7 @@ return {
 			end,
 		})
 
-    vim.keymap.set("n", "<leader>cl", function()
+		vim.keymap.set("n", "<leader>cl", function()
 			lint.try_lint()
 		end, { desc = "Trigger linting for current file" })
 	end,

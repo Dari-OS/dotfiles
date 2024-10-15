@@ -3,11 +3,10 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local conform = require("conform")
-    local languages = require("config.lsp-config") 
-    -- local lsp_loader = require("plugins.lsp.lsp-loader").loader
+		local languages = require("config.lsp-config")
+		-- local lsp_loader = require("plugins.lsp.lsp-loader").loader
 		local formatters_by_ft = {}
 
-    -- TODO: Add a funciton to the lsp-loader to avoid using this methode of reading all formatters
 		for _, lang in ipairs(languages) do
 			if lang.formatter then
 				for _, ft in ipairs(lang.filetypes) do
