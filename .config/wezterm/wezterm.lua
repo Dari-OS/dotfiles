@@ -10,7 +10,7 @@ return {
 	window_padding = {
 		left = 10,
 		right = 10,
-		top = 0,
+		top = 10,
 		bottom = 0,
 	},
 

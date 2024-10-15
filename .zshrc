@@ -107,10 +107,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls="eza --color=always --git --icons=always"
 
 #if [ -z "$TMUX" ]; then
 #tmux attach -t main || tmux new-session -s main
 #fi
+
+cd() {
+	if [ -n "$1" ]; then
+		z "$@" && ls
+	else
+		z ~ && ls
+	fi
+}
 
 session_name="main"
 
