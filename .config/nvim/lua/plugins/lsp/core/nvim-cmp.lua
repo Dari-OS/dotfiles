@@ -43,7 +43,7 @@ return {
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(), -- Previous suggestion
 				["<C-j>"] = cmp.mapping.select_next_item(), -- Next suggestion
-				["<C-s>"] = cmp.mapping.complete(), -- show completion suggestions
+				["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
 				["<C-u>"] = cmp.mapping.scroll_docs(-4), -- Scroll up in the completion docs
 				["<C-d>"] = cmp.mapping.scroll_docs(4), -- Scroll down in the completion docs
 				["<C-c>"] = cmp.mapping.abort(), -- Close completion window
