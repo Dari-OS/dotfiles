@@ -162,60 +162,60 @@ return {
 			end,
 		},
 	},
-	{
-		name = "rust",
-		filetypes = { "rust" },
-		treesitter = { "rust" },
-		lsp = "rust_analyzer",
-		lsp_config = {
-			capabilities = capabilities,
-			settings = {
-				["rust-analyzer"] = {
-					checkOnSave = {
-						command = "clippy",
-						allFeatures = true,
-					},
-					diagnostics = {
-						enable = true,
-						experimental = {
-							enable = true,
-						},
-					},
-					inlayHints = {
-						enable = true,
-					},
-					procMacro = {
-						enable = true,
-					},
-					cargo = {
-						allFeatures = true,
-					},
-					check = {
-						command = "clippy",
-						extraArgs = { "--all-features" },
-					},
-				},
-			},
-			on_attach = function(client, bufnr)
-				-- Enable completion triggered by <c-x><c-o>
-				vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
-
-				-- Enable inlay hints
-				if client.server_capabilities.inlayHintProvider then
-					vim.lsp.inlay_hint(bufnr, true)
-				end
-
-				-- Set up autocommand for more frequent updates
-				vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI", "TextChangedP" }, {
-					buffer = bufnr,
-					callback = function()
-						vim.lsp.buf.semantic_tokens_full()
-						vim.diagnostic.show()
-					end,
-				})
-			end,
-		},
-	},
+	-- {
+	-- 	name = "rust",
+	-- 	filetypes = { "rust" },
+	-- 	treesitter = { "rust" },
+	-- 	lsp = "rust_analyzer",
+	-- 	lsp_config = {
+	-- 		capabilities = capabilities,
+	-- 		settings = {
+	-- 			["rust-analyzer"] = {
+	-- 				checkOnSave = {
+	-- 					command = "clippy",
+	-- 					allFeatures = true,
+	-- 				},
+	-- 				diagnostics = {
+	-- 					enable = true,
+	-- 					experimental = {
+	-- 						enable = true,
+	-- 					},
+	-- 				},
+	-- 				inlayHints = {
+	-- 					enable = true,
+	-- 				},
+	-- 				procMacro = {
+	-- 					enable = true,
+	-- 				},
+	-- 				cargo = {
+	-- 					allFeatures = true,
+	-- 				},
+	-- 				check = {
+	-- 					command = "clippy",
+	-- 					extraArgs = { "--all-features" },
+	-- 				},
+	-- 			},
+	-- 		},
+	-- 		on_attach = function(client, bufnr)
+	-- 			-- Enable completion triggered by <c-x><c-o>
+	-- 			vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
+	--
+	-- 			-- Enable inlay hints
+	-- 			if client.server_capabilities.inlayHintProvider then
+	-- 				vim.lsp.inlay_hint(bufnr, true)
+	-- 			end
+	--
+	-- 			-- Set up autocommand for more frequent updates
+	-- 			vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI", "TextChangedP" }, {
+	-- 				buffer = bufnr,
+	-- 				callback = function()
+	-- 					vim.lsp.buf.semantic_tokens_full()
+	-- 					vim.diagnostic.show()
+	-- 				end,
+	-- 			})
+	-- 		end,
+	-- 	},
+	-- },
 	{
 		name = "toml",
 		filetypes = { "toml" },
