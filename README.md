@@ -9,6 +9,10 @@ programms to install
 - oh-my-zsh
 - kitty
 - tmux
+- [make](https://www.gnu.org/software/make/manual/make.html)
+- [npm](https://www.npmjs.com/)
+- [python](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
+- [unzip](https://infozip.sourceforge.net/)
 - [.NET](https://learn.microsoft.com/en-us/dotnet/core/install/linux)
 - [latexmk](https://mg.readthedocs.io/latexmk.html)
 - [NerdFont](https://www.nerdfonts.com/)
