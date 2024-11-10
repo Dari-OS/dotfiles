@@ -18,7 +18,8 @@ programms to install
 - [NerdFont](https://www.nerdfonts.com/)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
 - [~eza~](https://github.com/eza-community/eza)
-- [GO](https://go.dev/doc/install)
+- [Go](https://go.dev/doc/install)
+- [fzf](https://github.com/junegunn/fzf)
 
 ## Installation
 
