@@ -20,6 +20,8 @@ programms to install
 - [~eza~](https://github.com/eza-community/eza)
 - [Go](https://go.dev/doc/install)
 - [fzf](https://github.com/junegunn/fzf)
+- [zoxid](https://github.com/ajeetdsouza/zoxide) _(for the .zshrc_)_
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch) _(for the .zshrc)_
 
 ## Installation
 
