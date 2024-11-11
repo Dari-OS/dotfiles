@@ -22,6 +22,7 @@ programms to install
 - [fzf](https://github.com/junegunn/fzf)
 - [zoxid](https://github.com/ajeetdsouza/zoxide) _(for the .zshrc_)_
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch) _(for the .zshrc)_
+- [gcc](https://gcc.gnu.org/) or [clang](https://clang.llvm.org/)
 
 ## Installation
 
