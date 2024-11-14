@@ -4,7 +4,7 @@ My personal Dotfiles
 
 programms to install
 
-- rust-analyser
+- [rust-analyzer](https://rust-analyzer.github.io/)
 - zsh
 - oh-my-zsh
 - kitty
