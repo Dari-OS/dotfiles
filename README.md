@@ -5,10 +5,13 @@ My personal Dotfiles
 programms to install
 
 - [rust-analyzer](https://rust-analyzer.github.io/)
-- zsh
-- oh-my-zsh
-- kitty
-- tmux
+- [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+- [oh-my-zsh](https://ohmyz.sh/)
+- [kitty](https://sw.kovidgoyal.net/kitty/binary/)
+- [tmux](https://github.com/tmux/tmux/wiki/Installing)
+- [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+- [zsh-history-substring-search]()
 - [make](https://www.gnu.org/software/make/manual/make.html)
 - [npm](https://www.npmjs.com/)
 - [python](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
